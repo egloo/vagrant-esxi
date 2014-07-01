@@ -26,7 +26,7 @@ module VagrantPlugins
 
           return :not_created if s.eql?(1)
 
-          if o.chomp.eql?("Powered on")
+          if o.chomp.eql?("Retrieved runtime info\nPowered on")
             :running
           else
             :poweroff
